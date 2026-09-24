@@ -8,7 +8,7 @@
     "indexer"
   ],
   "scripts": {
-    "build": "npm run build:graphql && npm run build:indexer",
+    "build": "node api.js && npm run build:graphql && npm run build:indexer",
     "build:graphql": "cd graphql-server && npm run build",
     "build:indexer": "cd indexer && npm run build",
     "test": "npm run test:indexer && npm run test:graphql",
